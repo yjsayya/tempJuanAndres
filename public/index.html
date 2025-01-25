@@ -1,0 +1,236 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", Libre, Georgia, Times, serif;
+    color: #404040;
+  }
+
+  .wrapper {
+    width: 900px;
+    margin: 35px auto 35px auto;
+  }
+
+  /* -- <header> --------------------------------------------------------- */
+  .header-worldmap {
+    position: relative;
+    width: 900px;
+    height: 100px;
+    background-image: url('imgs/worldmap.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .header-content {
+    width: 100%; 
+    padding: 30px 0 30px 0;
+
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo {
+    width: 120px; height: 120px;
+
+    background-image: url('imgs/juanadres.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .header-content-title {
+    width: 780px; height: 150px;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .header-content-title > p {
+    margin: 10px 10px 0 10px;
+  }
+
+  .header-content-title-sub {
+    color: #ab1d1d;
+  }
+
+
+  /* -- <section> --------------------------------------------------------- */
+  .section-content {
+    padding: 20px;
+  }
+
+  /* 테이블 스타일 */
+  .section-content-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  /* 테이블 헤더 스타일 */
+  .section-content-table th {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .section-content-table th span {
+    font-size: 12px;
+    color: #bbb; /* 부제목 색상 */
+  }
+
+  /* 테이블 본문 스타일 */
+  .section-content-table td {
+    border: 1px solid black;
+    padding: 10px;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  .section-content-table td span {
+    font-size: 12px;
+    color: #bbb;
+  }
+
+  /* 테이블 행 간격 */
+  .section-content-table tr {
+    height: 60px;
+  }
+
+  /* -- <footer> --------------------------------------------------------- */
+  footer {
+    width: 900px; height: 170px;
+
+  }
+
+  .footer-flag {
+    width: 100%; height: 120px;
+
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-flag-korean {
+    width: 80px; height: auto;
+    background-image: url('./koreanFlag.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .footer-flag-spain {
+    width: 80px; height: auto;
+    background-image: url('./spainFlag.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .footer-title {
+    width: 100%;
+    text-align: right;
+  }
+
+  .footer-title > p {
+    margin: 10px 0 0 10px;
+  }
+  
+  .footer-title-main {
+    font-size: 17px;
+  }
+
+  .footer-title-sub {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ab1d1d;
+  }
+
+  footer > hr {
+    margin: 20px auto;
+    box-sizing: content-box;
+  }
+
+
+</style>
+<body>
+  <div class="wrapper">
+    <header>
+      <hr/>
+      <div class="header-worldmap"></div>
+      <div class="header-content">
+        <div class="logo"></div>
+        <div class="header-content-title">
+          <p class="header-content-title-main">후안 안드레스 스페인-한국학 연구소</p>
+          <p class="header-content-title-sub">INSTITUTO JUAN ANDRÉS DE ESTUDIOS HISPANO-COREANOS</p>
+        </div> 
+      </div>
+    </header>
+    <section>
+      <div class="section-content">
+        <table class="section-content-table">
+          <thead>
+            <tr>
+              <th>연구소<br><span>Instituto</span></th>
+              <th>학술지<br><span>Revista</span></th>
+              <th>블로그<br><span>Blog</span></th>
+              <th>연구<br><span>Estudios</span></th>
+              <th>텍스트<br><span>Textos</span></th>
+              <th>관련 링크<br><span>Enlaces de interés</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                소개
+                <br>
+                <span>(Presentación del instituto)</span>
+                <br>
+                <br>
+                <br>
+                <br>
+                위원회
+                <br>
+                <span>(Comité)</span>
+                <br>
+                <br>
+                <br>
+                <br>
+                연구자 및 학술고문
+                <br>
+                <span>(Investigadores y Colaboradores científicos)</span>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-flag">
+        <img src="imgs/koreanFlag.png" alt="" class="footer-flag-korean">
+        <img src="imgs/spainFlag.png" alt="" class="footer-flag-spain">
+      </div>
+      <div class="footer-title">
+        <p class="footer-title-main">후안 안드레스 스페인-한국학 연구소&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="footer-title-sub">INSTITUTO JUAN ANDRÉS DE ESTUDIOS HISPANO-COREANOS &nbsp;&nbsp;&nbsp;&nbsp;</p>
+      </div> 
+      <hr>
+    </footer>
+  </div>
+</body>
+</html>
