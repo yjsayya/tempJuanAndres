@@ -7,92 +7,115 @@
   <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/common.css">
   <title>Juan Andres</title>
-</head>
-<style>
-  .section-content {
-    min-height: 300px;
-
-    display: flex;
-    flex-flow: nowrap row;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 14px;
-  }
-
-  .section-content h3 {
-    color: #ab1d1d;
-    font-size: 18px;
-    font-weight: 600;
-  }
-
-  .section-content-introduction {
-    /* border: 1px solid black; */
-    width: 55%;
-  }
-
-  .section-content-introduction p {
-    text-align: justify;
-  }
-
-  .section-lab {
-    /* border: 1px solid black; */
-    width: 36%;
-  }
-
-  .section-lab ul {
-    /* border: 1px solid black; */
-    padding-left: 10px;
-    list-style-type: none;
-  }
-
-  .section-lab li {
-    /* border: 1px solid black; */
-    height: 10px;
-    margin: 0;
-    padding: 10px 0;
-  }
-
-  .section-lab li[style*="padding-left"] {
-    padding: 3px 0 3px 20px;
-    margin-bottom: 5px;
-  }
-
-  .section-lab a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-  }
-
-  .section-lab a:hover {
-    color: #ab1d1d;
-    text-decoration: underline;
-  }
-
-  .section-content p:first-of-type {
-    margin-top: 10px;
-  }
-
-  @media (max-width: 768px) {
+  <style>
     .section-content {
-      flex-direction: column;
-      align-items: center;
+      min-height: 300px;
+
+      display: flex;
+      flex-flow: nowrap row;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-size: 14px;
     }
 
-    .section-content-introduction,
-    .section-lab {
-      width: 100%;
-      margin-bottom: 30px;
+    .section-content h3 {
+      color: #ab1d1d;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .section-content-introduction {
+      /* border: 1px solid black; */
+      width: 55%;
+    }
+
+    .section-content-introduction p {
+      text-align: justify;
     }
 
     .section-lab {
-      margin-top: 20px;
+      /* border: 1px solid black; */
+      width: 36%;
     }
 
     .section-lab ul {
-      padding-left: 0;
+      /* border: 1px solid black; */
+      padding-left: 10px;
+      list-style-type: none;
     }
-  }
-</style>
+
+    .section-lab li {
+      /* border: 1px solid black; */
+      height: 10px;
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    .section-lab li[style*="padding-left"] {
+      padding: 3px 0 3px 20px;
+      margin-bottom: 5px;
+    }
+
+    .section-lab a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    .section-lab a:hover {
+      color: #ab1d1d;
+      text-decoration: underline;
+    }
+
+    .section-content p:first-of-type {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .section-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section-content-introduction,
+      .section-lab {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .section-lab {
+        margin-top: 20px;
+      }
+
+      .section-lab ul {
+        padding-left: 0;
+      }
+    }
+
+    .header-content-title-main {
+      transition: font-size 0.3s ease, margin 0.3s ease;
+      margin: 10px 0;
+    }
+
+    .header-content-title-main.enlarged {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .header-content-title-sub {
+      transition: opacity 0.3s ease;
+      margin-bottom: 0;
+    }
+
+    .header-content-title-sub.hidden {
+      opacity: 0;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
 <body>
   <div class="wrapper">
     <header>
@@ -151,5 +174,18 @@
       <hr>
     </footer>
   </div>
+  <script>
+    window.addEventListener('scroll', function() {
+      const subTitle = document.querySelector('.header-content-title-sub');
+      const mainTitle = document.querySelector('.header-content-title-main');
+      if (window.scrollY > 50) {
+        subTitle.classList.add('hidden');
+        mainTitle.classList.add('enlarged');
+      } else {
+        subTitle.classList.remove('hidden');
+        mainTitle.classList.remove('enlarged');
+      }
+    });
+  </script>
 </body>
 </html>
