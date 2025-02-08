@@ -44,6 +44,10 @@ body {
   text-align: right;
 }
 
+.header-content-title-main {
+  font-weight: 600;
+}
+
 .header-content-title-sub {
   color: #ab1d1d;
   font-size: 12px;
