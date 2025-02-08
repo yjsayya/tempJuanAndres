@@ -16,17 +16,16 @@
     flex-flow: nowrap row;
     justify-content: space-between;
     align-items: flex-start;
-    font-size: 14px;  /* 섹션 내 기본 글자 크기 설정 */
+    font-size: 14px;
   }
 
   .section-content h3 {
     color: #ab1d1d;
-    font-size: 18px;  /* h3는 그대로 유지 */
+    font-size: 18px;
     font-weight: 600;
   }
 
   .section-content-introduction {
-    /* border: 1px solid black; */
     width: 55%;
   }
 
@@ -36,7 +35,6 @@
   }
 
   .section-lab {
-    /* border: 1px solid black; */
     width: 39%;
   }
 
@@ -52,18 +50,39 @@
 
   /* 중첩된 링크들의 패딩 조정 */
   .section-lab li[style*="padding-left"] {
-    padding: 3px 0 3px 20px;  /* 위아래 패딩을 3px로 줄이고, 왼쪽 패딩 20px 유지 */
+    padding: 3px 0 3px 20px;
   }
 
   .section-lab a {
-    color: #333;  /* 링크 색상을 어두운 회색으로 변경 */
-    text-decoration: none;  /* 기본 상태에서 밑줄 제거 */
-    transition: color 0.3s ease, text-decoration 0.3s ease;  /* 색상과 밑줄에 대한 전환 효과 */
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
   }
 
   .section-lab a:hover {
-    color: #ab1d1d;  /* 마우스 오버시 색상 변경 */
-    text-decoration: underline;  /* 마우스 오버시 밑줄 표시 */
+    color: #ab1d1d;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .section-content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section-content-introduction,
+    .section-lab {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .section-lab {
+      margin-top: 20px;
+    }
+
+    .section-lab ul {
+      padding-left: 0;
+    }
   }
 </style>
 <body>
