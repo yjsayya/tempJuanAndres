@@ -8,10 +8,36 @@
   <link rel="stylesheet" href="/css/common.css">
   <title>Juan Andres</title>
   <style>
-    .section-content {
-      min-height: 400px;
-      padding: 20px;
-    }
+  .section-content {
+    width: 55%;
+    padding: 0;
+    font-size: 13px;  /* 전체 글자 크기 축소 */
+  }
+
+  .section-content h3 {
+    color: #ab1d1d;
+    font-size: 18px;  /* h3 크기 유지 */
+    font-weight: 600;
+    margin-bottom: 20px;  /* 제목 아래 여백 추가 */
+  }
+
+  .section-content ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .section-content li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    position: relative;
+  }
+
+  .section-content li::before {
+    display: none;
+  }
+
+
   </style>
 </head>
 <body>
@@ -27,21 +53,27 @@
         </div> 
       </div>
     </header>
+
     <section>
       <div class="section-content">
-        <h3>학술지 제목</h3>
-        <p>여기에 내용 넣으면 될 듯...l Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde magni ad hic quibusdam sequi vitae molestias rerum animi velit minus, amet facilis, quasi accusantium. Perspiciatis sed suscipit optio odit voluptates.</p>
+        <h3>블로그</h3>
+        <p>블로그 내용 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, alias aperiam distinctio quaerat vel, autem iste accusantium eveniet illo a facilis sed explicabo aliquam quae? Quas, illum. Laborum, quis saepe!</p>
       </div>
     </section>
+
     <footer>
       <div class="footer-flag">
         <img src="imgs/koreanFlag.png" alt="한국 국기">
         <img src="imgs/spainFlag.png" alt="스페인 국기">
       </div>
-      <div class="footer-title">
-        <p class="footer-title-main">후안 안드레스 스페인-한국학 연구소</p>
-        <p class="footer-title-sub">INSTITUTO JUAN ANDRÉS DE ESTUDIOS HISPANO-COREANOS</p>
-      </div> 
+      <div class="footer-content">
+        <div class="footer-title">
+          <p class="footer-title-sub">INSTITUTO JUAN ANDRÉS DE ESTUDIOS HISPANO-COREANOS</p>
+          <p class="footer-title-main">후안 안드레스 스페인-한국학 연구소</p>
+          <br>
+          <p>Email: institutojuanandrescorea@gmail.com</p>
+        </div>
+      </div>
       <hr>
     </footer>
   </div>

@@ -49,60 +49,96 @@ body {
 }
 
 /* -- <footer> --------------------------------------------------------- */
-  footer {
+footer {
+  width: 100%;
+  padding: 40px 0;
+  margin-top: 50px;
+  border-top: 1px solid #eaeaea;
+}
+
+.footer-flag {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-flag img {
+  width: 40px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.footer-title {
+  margin: 0;
+  text-align: center;
+}
+
+.footer-title > p {
+  margin: 5px 0;
+}
+
+.footer-title-main {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.footer-title-sub {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ab1d1d;
+  margin-bottom: 15px;
+}
+
+.footer-title p:last-child {
+  font-size: 14px;
+  color: #666;
+  margin-top: 15px;
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+.footer-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 300px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .header-content-title {
     width: 100%;
     text-align: center;
-    padding: 20px 0;
   }
-
-    .footer-flag {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .footer-flag img {
-      width: 50px;
-      height: auto;
-    }
-
-    .footer-title {
-      margin-top: 26px;
-    }
-
-    .footer-title > p {
-      margin: 10px 0 0 10px;
-    }
-
-    .footer-title-main {
-      font-size: 17px;
-    }
-
-    .footer-title-sub {
-      font-size: 13px;
-      font-weight: 700;
-      color: #ab1d1d;
-    }
-
-    /* 반응형 스타일 */
-    @media (max-width: 300px) {
-      .wrapper {
-        width: 100%;
-        padding: 0 10px;
-      }
-      
-      .header-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      
-      .header-content-title {
-        width: 100%;
-        text-align: center;
-      }
-      
-      .footer-title {
-        flex-flow: nowrap column;
-      }
-    }
+  
+  .footer-title {
+    flex-flow: nowrap column;
+  }
+}

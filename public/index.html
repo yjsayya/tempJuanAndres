@@ -7,13 +7,65 @@
   <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/common.css">
   <title>Juan Andres</title>
-  <style>
-    .section-content {
-      min-height: 400px;
-      padding: 20px;
-    }
-  </style>
 </head>
+<style>
+  .section-content {
+    min-height: 300px;
+
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 14px;  /* 섹션 내 기본 글자 크기 설정 */
+  }
+
+  .section-content h3 {
+    color: #ab1d1d;
+    font-size: 18px;  /* h3는 그대로 유지 */
+    font-weight: 600;
+  }
+
+  .section-content-introduction {
+    /* border: 1px solid black; */
+    width: 55%;
+  }
+
+  .section-content-introduction p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-lab {
+    /* border: 1px solid black; */
+    width: 39%;
+  }
+
+  .section-lab ul {
+    padding-left: 20px;
+    list-style-type: none;
+  }
+
+  .section-lab li {
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  /* 중첩된 링크들의 패딩 조정 */
+  .section-lab li[style*="padding-left"] {
+    padding: 3px 0 3px 20px;  /* 위아래 패딩을 3px로 줄이고, 왼쪽 패딩 20px 유지 */
+  }
+
+  .section-lab a {
+    color: #333;  /* 링크 색상을 어두운 회색으로 변경 */
+    text-decoration: none;  /* 기본 상태에서 밑줄 제거 */
+    transition: color 0.3s ease, text-decoration 0.3s ease;  /* 색상과 밑줄에 대한 전환 효과 */
+  }
+
+  .section-lab a:hover {
+    color: #ab1d1d;  /* 마우스 오버시 색상 변경 */
+    text-decoration: underline;  /* 마우스 오버시 밑줄 표시 */
+  }
+</style>
 <body>
   <div class="wrapper">
     <header>
@@ -27,25 +79,47 @@
         </div> 
       </div>
     </header>
+
     <section>
       <div class="section-content">
-        <h3>연구소</h3>
-        <p>여기에 내용 넣으면 될 듯...l Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde magni ad hic quibusdam sequi vitae molestias rerum animi velit minus, amet facilis, quasi accusantium. Perspiciatis sed suscipit optio odit voluptates.</p>
-        <br>
-        <h3>학술지</h3>
-        <span>학술지 : </span><a href="./contents.html">학술지이름</a>
-        <p>학술지에 대한 설명... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, earum! Quam exercitationem dicta, ea quaerat in earum veritatis provident excepturi natus officia eveniet tempora quasi, totam aliquid. Facilis, aperiam sunt?</p>
+        <div class="section-content-introduction">
+          <h3>소개</h3>
+          <p>
+            후안 안드레스 스페인-한국학 연구소는 학술-문화기관으로서 히스패니즘, 번역, 한국을 비롯한 아시아 문화 연구기관이며, 스페인의 후안 안드레스 비교학-세계화 학술원과 연계된 학술기관이다.
+          </p>
+          <br>
+          <p>
+            El Instituto Juan Andrés de Estudios Hispano-Coreanos (Corea del Sur) es un organismo cultural y científico dedicado al Hispanismo y a la traducción, a la cultura asiática y en particular la coreana. Está asociado al Instituto Juan Andrés de Comparatística y Globalización (España).
+          </p>
+        </div>
+        <div class="section-lab">
+          <h3>바로가기</h3>
+          <ul>
+            <li>> <a href="./researchers.html">위원회(Comité)</a></li>
+            <li>> <a href="./journal.html">학술지(journal)</a></li>
+            <li>> <a href="./blog.html">블로그(blog)</a></li>
+            <li>> 링크(enlaces)</a></li>
+            <li style="padding-left: 20px;"><a href="http://humanismoeuropa.org/">https://humanismoeuropa.org/</a></li>
+            <li style="padding-left: 20px;"><a href="https://edicionesinstitutojuanandres.com/">https://edicionesinstitutojuanandres.com/</a></li>
+            <li style="padding-left: 20px;"><a href="https://revistarecension.com/">https://revistarecension.com/</a></li>
+          </ul>
+        </div>
       </div>
     </section>
+
     <footer>
       <div class="footer-flag">
         <img src="imgs/koreanFlag.png" alt="한국 국기">
         <img src="imgs/spainFlag.png" alt="스페인 국기">
       </div>
-      <div class="footer-title">
-        <p class="footer-title-main">후안 안드레스 스페인-한국학 연구소</p>
-        <p class="footer-title-sub">INSTITUTO JUAN ANDRÉS DE ESTUDIOS HISPANO-COREANOS</p>
-      </div> 
+      <div class="footer-content">
+        <div class="footer-title">
+          <p class="footer-title-sub">INSTITUTO JUAN ANDRÉS DE ESTUDIOS HISPANO-COREANOS</p>
+          <p class="footer-title-main">후안 안드레스 스페인-한국학 연구소</p>
+          <br>
+          <p>Email: institutojuanandrescorea@gmail.com</p>
+        </div>
+      </div>
       <hr>
     </footer>
   </div>
