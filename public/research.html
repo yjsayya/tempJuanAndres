@@ -4,62 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/imgs/juanandres_ori.jpeg" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/common.css">
-  <title>Juan Andres</title>
-  <style>
-  .section-content {
-    width: 55%;
-    padding: 0;
-    font-size: 13px;  /* 전체 글자 크기 축소 */
-  }
-
-  .section-content h3 {
-    color: #ab1d1d;
-    font-size: 18px;  /* h3 크기 유지 */
-    font-weight: 600;
-    margin-bottom: 20px;  /* 제목 아래 여백 추가 */
-  }
-
-  .section-content ul {
-    padding-left: 0;
-    margin: 0;
-    list-style: none;
-  }
-
-  .section-content li {
-    margin-bottom: 15px;
-    line-height: 1.6;
-    position: relative;
-  }
-
-  .section-content li::before {
-    display: none;
-  }
-
-
-  </style>
+  <link rel="stylesheet" href="/css/research-article.css">
+  <title>연구 Estudios | Juan Andrés</title>
 </head>
-<body>
+<body class="page-research-list">
   <div class="wrapper">
     <header>
       <hr/>
       <div class="header-worldmap"></div>
       <div class="header-content">
-        <div class="logo">
+        <a href="/index.html" class="logo" style="display:block;text-decoration:none;color:inherit;">
           <img src="/imgs/juanandres.jpeg" alt="Juan Andres">
-        </div>
+        </a>
         <div class="header-content-title">
           <p class="header-content-title-sub">INSTITUTO JUAN ANDRÉS DE ESTUDIOS HISPANO-COREANOS</p>
           <p class="header-content-title-main">후안 안드레스 스페인-한국학 연구소</p>
-        </div> 
+        </div>
       </div>
     </header>
 
     <section>
-      <div class="section-content">
-        <h3>연구</h3>
-        <p>연구 내용 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, alias aperiam distinctio quaerat vel, autem iste accusantium eveniet illo a facilis sed explicabo aliquam quae? Quas, illum. Laborum, quis saepe!</p>
+      <div class="section-content research-intro-wrap" style="width:100%;max-width:900px;">
+        <h3 style="color:#ab1d1d;font-size:22px;margin-bottom:12px;">연구 · Estudios</h3>
+        <p class="research-intro">
+          스페인어로 게재된 학술·에세이 글입니다. 항목을 누르면 본문으로 이동합니다.
+          <span lang="es" style="display:block;margin-top:8px;font-size:14px;color:#666;">Ensayos y estudios en español. Pulse una tarjeta para leer el texto completo.</span>
+        </p>
+
+        <div class="research-grid">
+          <a class="research-card" href="/research-teoria-humanismo-munguang.html">
+            <span class="research-card-kicker">Humanismo · Budismo · Poesía</span>
+            <h2 class="research-card-title" lang="es">Teoría del humanismo coreano</h2>
+            <p class="research-card-meta" lang="es">Munguang (Mun-guang Sunim)<br>Trad.: Yi Hyekyung-Mercedes</p>
+            <span class="research-card-cta">Leer artículo →</span>
+          </a>
+          <a class="research-card" href="/research-wonhyo.html">
+            <span class="research-card-kicker">Humanismo · Corea · Budismo</span>
+            <h2 class="research-card-title" lang="es">
+              Introducción a la vida y al pensamiento de Wonhyo, maestro del humanismo de Corea
+            </h2>
+            <p class="research-card-meta" lang="es">
+              Yi Hyekyung-Mercedes<br>
+              Introducción a la figura de Wonhyo, maestro del humanismo coreano.
+            </p>
+            <span class="research-card-cta">Leer artículo →</span>
+          </a>
+          <a class="research-card" href="/research-religion-pensamiento-corea.html">
+            <span class="research-card-kicker">Religión · Pensamiento · Corea</span>
+            <h2 class="research-card-title" lang="es">
+              Sobre el estudio de la religión y el pensamiento de Corea y su difusión en España
+            </h2>
+            <p class="research-card-meta" lang="es">
+              Yi Hyekyung-Mercedes<br>
+              Ensayo sobre la recepción de la religión y el pensamiento coreanos en España.
+            </p>
+            <span class="research-card-cta">Leer artículo →</span>
+          </a>
+          <a class="research-card" href="/research-introduccion-poesia-coreana.html">
+            <span class="research-card-kicker">Poesía · Siyo · Miñosí</span>
+            <h2 class="research-card-title" lang="es">
+              Una introducción breve en lengua española a la poesía coreana: el género clásico siyo y la derivación contemporánea miñosí
+            </h2>
+            <p class="research-card-meta" lang="es">
+              Pedro Aullón de Haro · Yi Hyekyung-Mercedes<br>
+              Introducción a la tradición poética siyo y a su derivación moderna miñosí.
+            </p>
+            <span class="research-card-cta">Leer artículo →</span>
+          </a>
+          <a class="research-card" href="/research-historiografia-asia-este.html">
+            <span class="research-card-kicker">Historiografía · Asia del Este</span>
+            <h2 class="research-card-title" lang="es">
+              El estudio comparatista de la historia literaria de Asia del Este según Cho Dong-il
+            </h2>
+            <p class="research-card-meta" lang="es">
+              Lee Hye-kyung<br>
+              Ensayo sobre la historiografía literaria comparada de Corea, China, Japón y Vietnam.
+            </p>
+            <span class="research-card-cta">Leer artículo →</span>
+          </a>
+        </div>
       </div>
     </section>
 

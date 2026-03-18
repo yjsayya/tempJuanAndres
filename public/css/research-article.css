@@ -1,0 +1,274 @@
+/* 연구 글 목록 · 본문 공통 */
+.page-research-list .research-intro {
+  max-width: 640px;
+  margin-bottom: 2.5rem;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.35rem;
+  border: 1px solid #e8e4df;
+  border-radius: 8px;
+  background: #fdfcfa;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.research-card:hover {
+  border-color: #c9a8a8;
+  box-shadow: 0 6px 24px rgba(171, 29, 29, 0.08);
+}
+
+.research-card-kicker {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ab1d1d;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.research-card-title {
+  font-family: "Crimson Pro", "Noto Serif KR", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 0.75rem;
+  color: #2c2c2c;
+}
+
+.research-card-meta {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.research-card-cta {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ab1d1d;
+}
+
+.research-card--soon {
+  opacity: 0.85;
+  cursor: default;
+  pointer-events: none;
+}
+
+.research-card--soon .research-card-cta {
+  color: #999;
+}
+
+/* 본문 페이지 */
+.page-article .article-wrap {
+  max-width: 720px;
+}
+
+.article-header-nav {
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  font-size: 14px;
+  color: #ab1d1d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.research-article {
+  font-family: "Crimson Pro", "Noto Serif KR", Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #2a2a2a;
+  padding-bottom: 3rem;
+}
+
+.article-hero {
+  text-align: center;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eae6e1;
+}
+
+.article-kicker {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ab1d1d;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+.article-title {
+  font-size: clamp(1.65rem, 4vw, 2.15rem);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 1.25rem;
+  color: #1a1a1a;
+}
+
+.article-meta {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+.article-meta .author {
+  font-weight: 600;
+  color: #333;
+}
+
+.article-toc {
+  background: #f7f5f2;
+  border: 1px solid #ebe7e0;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.article-toc h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #ab1d1d;
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.article-toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.article-toc a {
+  color: #444;
+  text-decoration: none;
+}
+
+.article-toc a:hover {
+  color: #ab1d1d;
+  text-decoration: underline;
+}
+
+.article-section {
+  margin-bottom: 2.25rem;
+}
+
+.article-section h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ab1d1d;
+  margin: 2rem 0 1rem;
+  line-height: 1.35;
+  scroll-margin-top: 1rem;
+}
+
+.article-section h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #5c3d3d;
+  margin: 1.75rem 0 0.85rem;
+}
+
+.research-article p {
+  margin: 0 0 1.1em;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.research-article .pullquote {
+  margin: 1.75rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid #ab1d1d;
+  background: #faf8f6;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.research-article .pullquote p {
+  margin: 0;
+  text-align: left;
+}
+
+.research-article sup.ref {
+  font-size: 0.7em;
+  vertical-align: super;
+  color: #ab1d1d;
+  font-weight: 600;
+  margin-left: 1px;
+}
+
+.article-footnotes {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e0d8;
+}
+
+.article-footnotes h2 {
+  font-size: 1rem;
+  color: #ab1d1d;
+  margin-bottom: 1rem;
+}
+
+.article-footnotes ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #444;
+}
+
+.article-footnotes li {
+  margin-bottom: 0.85rem;
+}
+
+.article-footer .article-endmark {
+  text-align: center;
+  color: #ccc;
+  font-size: 1.5rem;
+  margin: 2.5rem 0 0;
+}
+
+.article-loading,
+.article-error {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #666;
+}
+
+.article-error {
+  color: #ab1d1d;
+}
+
+@media (max-width: 640px) {
+  .research-article {
+    font-size: 1.05rem;
+  }
+
+  .research-article p {
+    text-align: left;
+  }
+}
